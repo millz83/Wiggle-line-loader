@@ -1,0 +1,57 @@
+body {
+    background-color: #444;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+}
+
+.wiggle-loader {
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+}
+.wiggle-loader > div {
+	height: 10px;
+	position: relative;
+	right: 0;
+	animation: wiggle 1s linear infinite;
+}
+.wiggle-loader> div:nth-child(1) {
+	background: #a5f7e5;
+	animation-delay: 0.05s;
+}
+.wiggle-loader > div:nth-child(2) {
+	background: #79ecd3;
+	animation-delay: 0.1s;
+}
+.wiggle-loader > div:nth-child(3) {
+	background: #52dfc0;
+	animation-delay: 0.15s;
+}
+.wiggle-loader> div:nth-child(4) {
+	background:  #06c299;
+	animation-delay: 0.2s;
+}
+.wiggle-loader > div:nth-child(5) {
+	background: #26a388;
+	animation-delay: 0.25s;
+}
+@keyframes wiggle {
+	0% {
+		right: 0;
+	}
+	10% {
+		right: -12px;
+	}
+	20% {
+		right: 8px;
+	}
+	30% {
+		right: 0;
+	}
+	100% {
+		right: 0;
+	}
+}
